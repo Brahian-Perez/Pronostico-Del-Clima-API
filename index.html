@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/icono.svg">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Pronóstico Del Tiempo</title>
+</head>
+<body id="body">
+
+    <main class="contenedor">
+        <div class="tarjetaClima">
+
+            <div class="buscador">
+                <input type="text" id="inputCiudad" placeholder="Ingrese la ciudad...">
+                <button id="btnBuscar">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Buscar" class="iconoLupa">
+                    
+                </button>
+            </div>
+
+            <div class="iconoClima">
+                <img id="imgClima" src="imagenes/icono.svg" alt="Icono del clima">
+            </div>
+
+            <p class="temperatura" id="temperatura">--°C</p>
+            <p class="nombreCiudad" id="nombreCiudad">Ciudad</p>
+
+            <div class="datosExtra">
+                <div class="dato">
+                    <p class="valorDato" id="humedad">--%</p>
+                    <p class="etiquetaDato">Humedad</p>
+                </div>
+                <div class="dato">
+                    <p class="valorDato" id="viento">-- km/h</p>
+                    <p class="etiquetaDato">Velocidad del viento</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="clima.js"></script>
+</body>
+</html>
+
+
+<!-- api key   9547b31032baf76436ddbc5fcc530ae9 -->
